@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.header {
+    background-color: #222222;
+    color: #fff;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+
+
+.header-col-1 img:first-child {
+    padding-right: 20px;
+}
+
+.header-col-2 img {
+    padding-right: 20px;
+}
+
+.header-col-2 img:nth-child(3) {
+    padding-right: 0;
+}
+
+.promo {
+    background-color: #F1E4E6;
+}
+
+.promo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.promo-img {
+    margin-left: -20%;
+}
+
+.hed-one {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    line-height: 38px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 10px;
+}
+
+.hed-one b {
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.hed-one span {
+    color: #F16D7F;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categories {
+    background-color: #fff;
+    padding-bottom: 95px;
+}
+
+.categories-wrap {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.categories-wrap span {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+
+.categories-top {
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.categories-item {
+    padding-right: 30px;
+}
+
+.categories-item p {
+    position: absolute;
+    top: 50%;
+
+}
+
+
+
+.categories-bottom {
+    position: relative;
+}
+
+.categories-item-acces p {
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+}
+
+
+
+.product {
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-wrap h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222;
+    padding-bottom: 6px;
+}
+
+.product-wrap p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.product-card {
+    padding-top: 48px;
+}
+
+.card-top {
+    display: flex;
+}
+
+.card-bottom {
+    padding-top: 30px;
+    display: flex;
+}
+
+.card {
+    text-align: left;
+}
+
+.card h3 {
+    padding-top: 25px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.card p {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.card blockquote {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.button {
+    background-color: #F16D7F;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 40px 15px 40px;
+    margin: 48px 0 95px 0;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.features {
+    background-color: #222;
+    color: #fff;
+}
+
+.features-wrap {
+    display: flex;
+    text-align: center;
+}
+
+.features-card {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.features-card h3 {
+    padding-top: 28px;
+    padding-bottom: 16px;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.features-card p {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+
+.feedback {
+    background-color: #fff;
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+
+}
+
+.feedback-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe-info {
+    padding-top: 95px;
+    padding-bottom: 125px;
+}
+
+.subscribe-info blockquote {
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+}
+
+.subscribe h3 {
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+    padding-bottom: 32px;
+}
+
+.subscribe h4 {
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+}
+
+input[type="email"] {
+    padding: 7px 40px 6px 22px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    margin-right: -5px;
+    color: #222224;
+    opacity: 0.67;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.button-subscribe {
+    padding: 7px 30px 6px 22px;
+    border: none;
+    background-color: #F16D7F;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.button-subscribe a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer {
+    background-color: #222224;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-around
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
