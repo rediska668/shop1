@@ -232,6 +232,11 @@ body {
 
 }
 
+.product-video {
+    object-fit: cover;
+    object-position: center;
+}
+
 .product-text-box {
     padding: 17px;
 }
