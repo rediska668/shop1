@@ -194,6 +194,7 @@ body {
 /* product */
 
 .product {
+    padding-top: 20px;
     background-color: #fff;
     text-align: center;
 }
@@ -236,7 +237,7 @@ body {
 }
 
 .product-name {
-    padding-top: 25px;
+    padding-top: 23px;
     font-size: 13px;
     line-height: 16px;
     color: #000;
@@ -244,7 +245,7 @@ body {
 
 .product-text {
     padding-top: 12px;
-    padding-bottom: 18px;
+    padding-bottom: 10px;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -417,4 +418,134 @@ body {
 .social-link:hover {
     background-color: #F16D7F;
     color: #fff;
+}
+
+/* Catolog */
+
+.catalog {
+    background: #F8F3F4;
+    height: 148px;
+    padding: 60px 0;
+}
+
+.catolog-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catolog-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
+
+.breadcrumbs {
+    padding: 20px;
+}
+
+.breadcrumbs-list {
+    display: flex;
+    list-style: none;
+}
+
+.breadcrumbs-item {
+    margin-right: 5px;
+}
+
+
+.breadcrumbs-link {
+    color: #636363;
+}
+
+.breadcrumbs-link,
+.breadcrumbs-link-pink {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.breadcrumbs-link-pink {
+    font-weight: bold;
+    color: #F16D7F;
+}
+
+.breadcrumbs-item::before {
+    content: '/';
+    margin-right: 3px;
+}
+
+.breadcrumbs-item:first-child:before {
+    display: none;
+}
+
+.box-form {
+    display: flex;
+    padding: 40px 0;
+    padding: 50px 0 60px 0;
+
+}
+
+.filter-box {
+    width: 50%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sort {
+    display: flex;
+    gap: 20px;
+}
+
+.sort-link {
+    text-decoration: none;
+    color: #222;
+}
+
+/* pagination */
+.pagination {
+    padding: 50px 0 95px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 13px;
+    gap: 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.pagination-link {
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #fff;
+    color: #C4C4C4;
+}
+
+.pagination-item--separator {
+    color: #C4C4C4;
+    margin: 0 -13px 0 -13px;
+
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    color: #000;
+}
+
+.pagination-link:hover {
+    color: #f16d7f;
+}
+
+.fa-chevron-right:hover,
+.fa-chevron-left:hover {
+    color: #f16d7f;
 }
