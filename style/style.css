@@ -60,12 +60,41 @@ body {
 
 /* navigation */
 
-.nav-list {
+.header-nav-list {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 20px;
 }
+
+
+/* SVG */
+
+
+.header-icon svg {
+    fill: #fff;
+}
+
+.header-icon:hover svg {
+    fill: #F16D7F;
+}
+
+.header-icon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 50px;
+}
+
+.cart-number {
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    background-color: #F16D7F;
+}
+
 
 /* promo */
 
@@ -151,7 +180,7 @@ body {
 
 .offer-name {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 29px;
     color: #F16D7F;
     width: 160px;
 }
@@ -195,6 +224,7 @@ body {
 .product-item {
     width: 360px;
     height: 585px;
+    background: #F8F8F8;
     background-size: contain;
     background-repeat: no-repeat;
     text-align: left;
@@ -209,6 +239,7 @@ body {
     padding-top: 25px;
     font-size: 13px;
     line-height: 16px;
+    color: #000;
 }
 
 .product-text {
@@ -217,6 +248,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
+    color: #5d5d5d;
 }
 
 .product-price {
@@ -232,11 +264,17 @@ body {
     line-height: 19px;
     padding: 15px 40px 15px 40px;
     margin: 48px 0 95px 0;
-}
-
-.product-button a {
     text-decoration: none;
     color: #F16D7F;
+}
+
+.fa-arrow-right {
+    padding-left: 10px;
+}
+
+.product-button:hover {
+    background-color: #F16D7F;
+    color: #fff;
 }
 
 
@@ -254,8 +292,13 @@ body {
     text-align: center;
 }
 
+.features-img-box {
+    height: 40px;
+    margin-bottom: 19px;
+    text-align: center;
+}
+
 .features-name {
-    padding-top: 28px;
     padding-bottom: 16px;
     font-size: 19.96px;
     line-height: 24px;
@@ -351,8 +394,27 @@ body {
     color: #FBFBFB;
 }
 
-.footer-list {
-    display: flex;
+.social-list {
+    gap: 10px;
     list-style: none;
-    gap: 5px;
+    display: flex;
+
+}
+
+
+.social-link {
+    color: #000;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background-color: #F16D7F;
+    color: #fff;
 }
