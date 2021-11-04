@@ -45,7 +45,7 @@ body {
 
 /* header */
 .header {
-  background-color: #222222;
+  background-color: #222;
   color: #fff;
 }
 
@@ -92,10 +92,26 @@ body {
 }
 
 .header-icon:hover svg {
-  fill: #F16D7F;
+  fill: #f16d7f;
 }
 
-.header-icon span {
+.header-icon-span {
+  position: relative;
+  fill: #fff;
+}
+
+.cart-number {
+  position: absolute;
+  left: 23px;
+  bottom: 20px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #f16d7f;
+}
+
+.header-icon-span span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,16 +121,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 19px;
-  height: 19px;
-  border-radius: 50px;
-}
-
-.cart-number {
-  float: right;
-  color: #fff;
-  text-decoration: none;
-  background-color: #F16D7F;
 }
 
 /* promo */
@@ -142,9 +148,9 @@ body {
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
-  border-left: 12px solid #F16D7F;
+  border-left: 12px solid #f16d7f;
   padding-left: 16px;
-  color: #222222;
+  color: #222;
 }
 
 .promo-title-bold {
@@ -154,7 +160,7 @@ body {
 }
 
 .promo-title-pink {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 /* offer */
@@ -214,7 +220,7 @@ body {
 .offer-name {
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: #f16d7f;
   width: 160px;
 }
 
@@ -302,7 +308,7 @@ body {
 
 .product-button {
   background-color: #fff;
-  border: 1px solid #F16D7F;
+  border: 1px solid #f16d7f;
   font-size: 16px;
   line-height: 19px;
   padding: 15px 40px 15px 40px;
@@ -316,7 +322,7 @@ body {
 }
 
 .product-button:hover {
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   color: #fff;
 }
 
@@ -464,18 +470,18 @@ body {
 }
 
 .social-link:hover {
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   color: #fff;
 }
 
-/* Catolog */
-.catalog {
+/* Inner */
+.inner {
   background: #F8F3F4;
   height: 148px;
   padding: 60px 0;
 }
 
-.catolog-wrap {
+.inner-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,24 +490,24 @@ body {
           justify-content: space-between;
 }
 
-.catolog-title {
+.inner-title {
   font-size: 24px;
   line-height: 29px;
   color: #f16d7f;
 }
 
-.breadcrumbs {
+.inner-breadcrumbs {
   padding: 20px;
 }
 
-.breadcrumbs-list {
+.inner-breadcrumbs-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.breadcrumbs-item {
+.inner-breadcrumbs-item {
   margin-right: 5px;
 }
 
@@ -519,17 +525,21 @@ body {
   text-transform: uppercase;
 }
 
-.breadcrumbs-link-pink {
-  font-weight: bold;
-  color: #F16D7F;
+.breadcrumbs-link:hover {
+  color: #f16d7f;
 }
 
-.breadcrumbs-item::before {
+.breadcrumbs-link-pink {
+  font-weight: bold;
+  color: #f16d7f;
+}
+
+.inner-breadcrumbs-item::before {
   content: '/';
   margin-right: 3px;
 }
 
-.breadcrumbs-item:first-child:before {
+.inner-breadcrumbs-item:first-child:before {
   display: none;
 }
 
@@ -610,5 +620,183 @@ body {
 .fa-chevron-right:hover,
 .fa-chevron-left:hover {
   color: #f16d7f;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F8F8F8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 66px;
+}
+
+.slider-btn {
+  height: 47px;
+  width: 47px;
+  background-color: #EAEAEA;
+  border: none;
+}
+
+.slider-btn:hover {
+  fill: #f16d7f;
+}
+
+.slider-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about {
+  margin-top: -66px;
+}
+
+.about-wrap {
+  border: 1px solid #EAEAEA;
+  padding: 65px 0;
+  background: #fff;
+}
+
+.about-text-box {
+  text-align: center;
+}
+
+.about-title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+
+.about-title-hr {
+  margin-top: 20px;
+  width: 63px;
+  text-align: center;
+  height: 3px;
+  background-color: #f16d7f;
+  border: none;
+  display: inline-block;
+}
+
+.about-descr {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  padding: 28px 0 49px 0;
+}
+
+.about-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  padding-bottom: 33px;
+}
+
+.about-price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.about-price-hr {
+  height: 1px;
+  border: none;
+  background-color: #EAEAEA;
+  width: 642px;
+  display: inline-block;
+  margin: 65px 0;
+}
+
+.about-sort-box {
+  text-align: center;
+}
+
+.about-box-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding-bottom: 64px;
+}
+
+.about-box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-box-text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.about-box-svg {
+  margin-left: 10px;
+}
+
+.about-box-svg:hover {
+  fill: #f16d7f;
+}
+
+.about-shop-button {
+  text-align: center;
+  width: 212px;
+  border: 1px solid #f16d7f;
+  background-color: #fff;
+  color: #f16d7f;
+}
+
+.about-shop-button-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f16d7f;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.about-shop-button-link:hover {
+  color: #fff;
+  background-color: #f16d7f;
+}
+
+.about-shop-button-link:hover svg {
+  fill: #fff;
+}
+
+.about-shop-button-img {
+  fill: #f16d7f;
+  margin-right: 23px;
+}
+
+.product-inner-padding {
+  padding: 125px 0;
 }
 /*# sourceMappingURL=style.css.map */
