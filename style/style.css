@@ -95,6 +95,10 @@ body {
   fill: #f16d7f;
 }
 
+.header-icon-span:hover svg {
+  fill: #f16d7f;
+}
+
 .header-icon-span {
   position: relative;
   fill: #fff;
@@ -786,13 +790,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
   text-decoration: none;
   color: #f16d7f;
   font-size: 16px;

@@ -88,6 +88,10 @@ body {
     fill: $main-color;
 }
 
+.header-icon-span:hover svg {
+    fill: $main-color;
+}
+
 .header-icon-span {
     position: relative;
     fill: #fff;
@@ -168,9 +172,7 @@ body {
     width: 360px;
     height: 260px;
     background-color: $grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -755,10 +757,8 @@ body {
     }
 
     &-shop-button-link {
-        display: flex;
+        @include flex-center();
         padding: 10px;
-        justify-content: center;
-        align-items: center;
         text-decoration: none;
         color: $main-color;
         font-size: 16px;
