@@ -86,10 +86,13 @@ body {
 
 .header-icon:hover svg {
     fill: $main-color;
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .header-icon-span:hover svg {
     fill: $main-color;
+    transform: scale(1.2);
 }
 
 .header-icon-span {
@@ -261,14 +264,18 @@ body {
     background: rgba(58, 56, 56, 0.86);
     height: 420px;
     width: 360px;
-    //display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    // opacity: 0; // Видимость элемента
+    transform: scaleY(0);
+    transform-origin: left;
+    transition: 0.3s;
 }
 
 .product-item:hover .product-overlay {
-    display: flex;
+    // opacity: 1;
+    transform: scaleY(1);
 }
 
 .btn-add {
@@ -326,6 +333,7 @@ body {
     margin: 48px 0 95px 0;
     text-decoration: none;
     color: #F16D7F;
+    cursor: pointer;
 }
 
 .fa-arrow-right {
@@ -335,8 +343,27 @@ body {
 .product-button:hover {
     background-color: $main-color;
     color: #fff;
+    animation: bounce 0.5s infinite alternate;
 }
 
+
+//Animation
+
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(-5px);
+
+    }
+}
 
 /* features */
 
@@ -432,6 +459,10 @@ body {
     color: #FFFFFF;
 }
 
+.subscribe-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 
 /* footer */
@@ -477,6 +508,8 @@ body {
 .social-link:hover {
     background-color: $main-color;
     color: #fff;
+    transition: 0.5s;
+    transform: rotate(360deg);
 }
 
 /* Inner */
@@ -581,6 +614,7 @@ body {
     &-filter[open] {
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         text-align: left;
+        transition: 0.5s;
 
 
     }
@@ -590,6 +624,7 @@ body {
         background-color: #fff;
         outline: none;
         border: none;
+
     }
 }
 
@@ -748,15 +783,20 @@ body {
 .fa-chevron-right,
 .fa-chevron-left {
     color: #000;
+
 }
 
 .pagination-link:hover {
     color: $main-color;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .fa-chevron-right:hover,
 .fa-chevron-left:hover {
     color: $main-color;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 // Slider
