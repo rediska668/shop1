@@ -535,43 +535,167 @@ body {
     display: none;
 }
 
-// Product-box-form
+// Product-box
 
-.product-box-form {
+.product-box {
     display: flex;
+    align-items: center;
     padding: 50px 0 60px 0;
+    gap: 30px;
 
-}
-
-.product-filter-box {
-    width: 50%;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-.product-sort {
-    &-list {
-        @include list();
-        display: flex;
-        gap: 20px;
+    &-filter {
+        width: 360px;
+        box-sizing: border-box;
+        position: relative;
+        outline: none;
+        text-align: left;
+        border: none;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
     }
 
-    &-item {}
+    &-filter details {
+        background-color: #fff;
+    }
+
+    &-filter summary {
+        padding: 16px 0 16px 16px;
+
+
+    }
+
+    &-filter[open] {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        text-align: left;
+
+
+    }
+
+    &-filter[open]>summary {
+        color: $main-color;
+        background-color: #fff;
+        outline: none;
+        border: none;
+    }
+}
+
+
+.filter {
+
+    &-content {
+        position: absolute;
+        background-color: #fff;
+        width: 360px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &-title summary {
+        color: $main-color;
+        display: inline;
+        position: relative;
+        border-left: 5px solid $main-color;
+        border-bottom: 1px solid #EBEBEB;
+        margin: 10px 14px 10px 14px;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+
+    &-title[open] {
+        padding-bottom: 10px;
+    }
+
+    &-list {
+        @include list();
+    }
+
+    &-item {
+        padding: 11px 0 11px 28px;
+    }
 
     &-link {
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        text-decoration: none;
+    }
+}
+
+
+
+// Filter
+
+.product-box-filter summary::-webkit-details-marker {
+    display: none;
+}
+
+.product-box-filter summary {
+    display: block;
+}
+
+
+//Sort
+
+.product-box-sort summary::-webkit-details-marker {
+    display: none;
+}
+
+.product-box-sort summary {
+    display: block;
+}
+
+
+
+
+.product-box {
+    &-sort {
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        box-sizing: border-box;
+        position: relative;
+        outline: none;
+        border: none;
+        padding: 15px;
+    }
+
+    &-sort[open]>summary {
+        color: $main-color;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &-title {
+        padding: 17px;
+        width: 156px;
+    }
+
+    &-list {
+        @include list();
+        position: absolute;
+        width: 156px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        background-color: #fff;
+        padding: 10px 0;
+    }
+
+    &-item {
         text-decoration: none;
         font-size: 14px;
         line-height: 17px;
         color: #6F6E6E;
+        padding-bottom: 10px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
     }
 
-    &-link svg {
-        margin-left: 5px;
-    }
 
-    &-link:hover svg {
-        fill: $main-color;
-    }
 
 }
 
@@ -653,7 +777,7 @@ body {
 
 .about {
     margin-top: -66px;
-
+    text-align: center;
 
     &-wrap {
         border: 1px solid #EAEAEA;
@@ -719,33 +843,8 @@ body {
 
     &-sort-box {
         text-align: center;
-    }
-
-    &-box-list {
-        @include list;
         display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding-bottom: 64px;
-    }
-
-    &-box-item {
-        display: flex;
-        align-items: center;
-    }
-
-    &-box-text {
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
-    }
-
-    &-box-svg {
-        margin-left: 10px;
-    }
-
-    &-box-svg:hover {
-        fill: $main-color;
+        margin-left: 27%;
     }
 
     &-shop-button {
