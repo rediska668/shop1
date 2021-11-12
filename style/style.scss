@@ -582,7 +582,6 @@ body {
 }
 
 // Product-box
-
 .product-box {
     display: flex;
     align-items: center;
@@ -599,6 +598,19 @@ body {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+        z-index: 20;
+    }
+
+    &-filter[open] {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        text-align: left;
+        transition: 0.5s;
+    }
+
+    &-filter[open],
+    .filter-title {
+        position: relative;
+        z-index: 20;
     }
 
     &-filter details {
@@ -607,16 +619,6 @@ body {
 
     &-filter summary {
         padding: 16px 0 16px 16px;
-
-
-    }
-
-    &-filter[open] {
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-        text-align: left;
-        transition: 0.5s;
-
-
     }
 
     &-filter[open]>summary {
@@ -631,11 +633,12 @@ body {
 
 .filter {
 
-    &-content {
+    &-drop {
         position: absolute;
-        background-color: #fff;
         width: 360px;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        z-index: 10;
+        background-color: #fff;
+        box-sizing: border-box;
     }
 
     &-title summary {
@@ -707,7 +710,8 @@ body {
         position: relative;
         outline: none;
         border: none;
-        padding: 15px;
+        width: 132px;
+        z-index: 20;
     }
 
     &-sort[open]>summary {
@@ -715,24 +719,34 @@ body {
         background-color: #fff;
         outline: none;
         border: none;
+        z-index: 10;
+    }
+
+
+
+    &-sort[open] {
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
     &-title {
-        padding: 17px;
-        width: 156px;
+        padding: 5px;
+    }
+
+    &-drop {
+        position: absolute;
+        background-color: #fff;
+        box-sizing: border-box;
+        z-index: 10;
+        width: 132px;
     }
 
     &-list {
         @include list();
-        position: absolute;
-        width: 156px;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-        background-color: #fff;
-        padding: 10px 0;
+        padding: 10px;
     }
 
     &-item {
+        padding: 4px 0 4px 0;
         text-decoration: none;
         font-size: 14px;
         line-height: 17px;
@@ -920,6 +934,7 @@ body {
     &-shop-button-link:hover {
         color: #fff;
         background-color: $main-color;
+        transition: 0.5s;
     }
 
     &-shop-button-link:hover svg {

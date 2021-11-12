@@ -670,14 +670,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-}
-
-.product-box-filter details {
-  background-color: #fff;
-}
-
-.product-box-filter summary {
-  padding: 16px 0 16px 16px;
+  z-index: 20;
 }
 
 .product-box-filter[open] {
@@ -688,6 +681,20 @@ body {
   transition: 0.5s;
 }
 
+.product-box-filter[open],
+.product-box .filter-title {
+  position: relative;
+  z-index: 20;
+}
+
+.product-box-filter details {
+  background-color: #fff;
+}
+
+.product-box-filter summary {
+  padding: 16px 0 16px 16px;
+}
+
 .product-box-filter[open] > summary {
   color: #f16d7f;
   background-color: #fff;
@@ -695,12 +702,13 @@ body {
   border: none;
 }
 
-.filter-content {
+.filter-drop {
   position: absolute;
-  background-color: #fff;
   width: 360px;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 10;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .filter-title summary {
@@ -763,7 +771,8 @@ body {
   position: relative;
   outline: none;
   border: none;
-  padding: 15px;
+  width: 132px;
+  z-index: 20;
 }
 
 .product-box-sort[open] > summary {
@@ -771,28 +780,36 @@ body {
   background-color: #fff;
   outline: none;
   border: none;
+  z-index: 10;
+}
+
+.product-box-sort[open] {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .product-box-title {
-  padding: 17px;
-  width: 156px;
+  padding: 5px;
+}
+
+.product-box-drop {
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+  width: 132px;
 }
 
 .product-box-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  position: absolute;
-  width: 156px;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  background-color: #fff;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .product-box-item {
+  padding: 4px 0 4px 0;
   text-decoration: none;
   font-size: 14px;
   line-height: 17px;
@@ -993,6 +1010,8 @@ body {
 .about-shop-button-link:hover {
   color: #fff;
   background-color: #f16d7f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .about-shop-button-link:hover svg {
