@@ -979,10 +979,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 27%;
+  margin-left: 33%;
 }
 
 .about-shop-button {
+  margin: 20px;
   text-align: center;
   width: 212px;
   border: 1px solid #f16d7f;

@@ -911,10 +911,11 @@ body {
     &-sort-box {
         text-align: center;
         display: flex;
-        margin-left: 27%;
+        margin-left: 33%;
     }
 
     &-shop-button {
+        margin: 20px;
         text-align: center;
         width: 212px;
         border: 1px solid $main-color;
