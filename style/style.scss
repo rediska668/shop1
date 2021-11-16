@@ -32,6 +32,21 @@ body {
     width: 1140px;
 }
 
+//media
+
+@media(max-width: $tablet-breakpoint) {
+    .wrap {
+        width: 736px;
+    }
+}
+
+@media(max-width: $mobile-breakpoint) {
+    .wrap {
+        width: 350px;
+    }
+}
+
+
 .main {
     flex-grow: 1;
 }
@@ -65,6 +80,10 @@ body {
     align-items: center;
     gap: 20px;
     list-style: none;
+
+    @media(max-width: $tablet-breakpoint) {
+        gap: 20px;
+    }
 }
 
 /* navigation */
@@ -93,6 +112,7 @@ body {
 .header-icon-span:hover svg {
     fill: $main-color;
     transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .header-icon-span {
@@ -132,6 +152,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media(max-width: $tablet-breakpoint) {
+        height: 386px;
+        background-position: -45px 0;
+        background-size: contain;
+    }
 }
 
 
@@ -143,12 +169,22 @@ body {
     border-left: 12px solid $main-color;
     padding-left: 16px;
     color: $grey;
+
+    @media(max-width: $tablet-breakpoint) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .promo-title-bold {
     font-size: 48px;
     line-height: 58px;
     font-weight: 900;
+
+    @media(max-width: $tablet-breakpoint) {
+        font-size: 44px;
+        line-height: 53px;
+    }
 }
 
 .promo-title-pink {
@@ -160,7 +196,13 @@ body {
 
 .offer {
     background-color: #fff;
-    padding: 103px 0;
+    padding: 65px 0;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 20px 0;
+    }
+
+
 }
 
 .offer-list {
@@ -169,6 +211,10 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     text-align: center;
+
+    @media(max-width: $tablet-breakpoint) {
+        gap: 20px;
+    }
 }
 
 .offer-item {
@@ -178,6 +224,11 @@ body {
     @include flex-center();
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media(max-width: $tablet-breakpoint) {
+        height: 167px;
+        width: 232px;
+    }
 }
 
 .offer-item:nth-child(1) {
@@ -196,6 +247,10 @@ body {
     width: 100%;
     height: 180px;
     background-image: url("../img/category-accesories.jpg");
+
+    @media(max-width: $tablet-breakpoint) {
+        height: 116px;
+    }
 }
 
 .offer-name {
@@ -214,9 +269,13 @@ body {
 /* product */
 
 .product {
-    padding-top: 20px;
+    padding-top: 30px;
     background-color: #fff;
     text-align: center;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding-top: 134px;
+    }
 }
 
 .product-title {
@@ -224,13 +283,21 @@ body {
     line-height: 36px;
     color: $grey;
     padding-bottom: 6px;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding-bottom: 3px;
+    }
 }
 
 .product-desc {
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding-bottom: 72px;
+    }
 }
 
 .product-list {
@@ -239,6 +306,10 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
+
+    @media(max-width: $tablet-breakpoint) {
+        gap: 16px;
+    }
 
 }
 
@@ -334,6 +405,10 @@ body {
     text-decoration: none;
     color: #F16D7F;
     cursor: pointer;
+
+    @media(max-width: $tablet-breakpoint) {
+        margin: 32px 0 64px 0;
+    }
 }
 
 .fa-arrow-right {
@@ -372,12 +447,30 @@ body {
     background-color: $grey;
     color: #fff;
     padding: 100px 0;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 0 0 64px 0;
+    }
 }
 
 .features-wrap {
     display: flex;
     text-align: center;
+
+    @media(max-width: $tablet-breakpoint) {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 360px;
+    }
 }
+
+.features-card {
+    @media(max-width: $tablet-breakpoint) {
+        padding-top: 48px;
+    }
+}
+
+
 
 .features-img-box {
     height: 40px;
@@ -408,6 +501,9 @@ body {
     background-size: cover;
     padding: 100px 0;
 
+    @media(max-width: $tablet-breakpoint) {
+        padding: 64px 0 219px 0;
+    }
 }
 
 .feedback-wrap {
@@ -415,8 +511,24 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+
+    @media(max-width: $tablet-breakpoint) {
+        flex-wrap: wrap;
+
+    }
+
 }
 
+@media(max-width: $tablet-breakpoint) {
+    .subscribe-info {
+        width: 360px;
+    }
+
+    .subscribe {
+        width: 557px;
+        padding-top: 48px;
+    }
+}
 
 
 .subscribe-blockquote {
@@ -424,12 +536,20 @@ body {
     line-height: 24px;
     color: #222224;
     padding-top: 30px;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding-top: 20px;
+    }
 }
 
 .subscribe-name {
     font-size: 24px;
     line-height: 167.2%;
     color: #222224;
+
+    @media(max-width: $tablet-breakpoint) {
+        line-height: 162%;
+    }
 }
 
 .subscribe-text {
@@ -437,9 +557,15 @@ body {
     line-height: 167.2%;
     color: #222224;
     padding-bottom: 32px;
+
+    @media(max-width: $tablet-breakpoint) {
+        line-height: 162%;
+        padding-bottom: 27px;
+    }
 }
 
 .subscrime-form-field {
+    margin-right: -3px;
     padding: 16px;
     border-radius: 20px 0 0 20px;
     color: #222224;
@@ -447,6 +573,10 @@ body {
     font-size: 14px;
     line-height: 17px;
     border: none;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 20px;
+    }
 }
 
 .subscribe-button {
@@ -457,6 +587,10 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 20px;
+    }
 }
 
 .subscribe-button:hover {
@@ -477,6 +611,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media(max-width: $tablet-breakpoint) {
+        justify-content: space-between;
+    }
 }
 
 .footer-cocopyright {
@@ -489,6 +627,10 @@ body {
     gap: 10px;
     list-style: none;
     display: flex;
+
+    @media(max-width: $tablet-breakpoint) {
+        gap: 7.29px;
+    }
 
 }
 
@@ -581,12 +723,24 @@ body {
     display: none;
 }
 
+@media(max-width: $tablet-breakpoint) {
+    .product-catalog {
+        padding-top: 0;
+    }
+}
+
 // Product-box
 .product-box {
     display: flex;
     align-items: center;
     padding: 50px 0 60px 0;
     gap: 30px;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 24px 0 40px 0;
+        gap: 16px;
+
+    }
 
     &-filter {
         width: 360px;
@@ -712,6 +866,10 @@ body {
         border: none;
         width: 132px;
         z-index: 20;
+
+        @media(max-width: $tablet-breakpoint) {
+            width: 105px;
+        }
     }
 
     &-sort[open]>summary {
@@ -738,6 +896,10 @@ body {
         box-sizing: border-box;
         z-index: 10;
         width: 132px;
+
+        @media(max-width: $tablet-breakpoint) {
+            width: 105px;
+        }
     }
 
     &-list {
@@ -759,6 +921,12 @@ body {
 
 
 
+}
+
+@media(max-width: $tablet-breakpoint) {
+    .product-item-catalog:last-child {
+        display: none;
+    }
 }
 
 
@@ -912,33 +1080,36 @@ body {
         text-align: center;
         display: flex;
         margin-left: 33%;
+
+        @media(max-width:$tablet-breakpoint) {
+            margin-left: 27%;
+            gap: 5px;
+        }
     }
 
     &-shop-button {
-        margin: 20px;
         text-align: center;
         width: 212px;
+        margin-top: 48px;
+        padding: 10px;
         border: 1px solid $main-color;
         background-color: #fff;
         color: $main-color;
-    }
-
-    &-shop-button-link {
         @include flex-center();
-        padding: 10px;
+        display: inline-block;
         text-decoration: none;
-        color: $main-color;
         font-size: 16px;
         line-height: 19px;
     }
 
-    &-shop-button-link:hover {
+
+    &-shop-button:hover {
         color: #fff;
         background-color: $main-color;
         transition: 0.5s;
     }
 
-    &-shop-button-link:hover svg {
+    &-shop-button:hover svg {
         fill: #fff;
     }
 
@@ -953,4 +1124,14 @@ body {
 
 .product-inner-padding {
     padding: 125px 0;
+}
+
+@media(max-width:$tablet-breakpoint) {
+    .product-item-slider:last-child {
+        display: none;
+    }
+
+    .product-slider {
+        padding: 0;
+    }
 }
