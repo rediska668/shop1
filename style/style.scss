@@ -42,7 +42,7 @@ body {
 
 @media(max-width: $mobile-breakpoint) {
     .wrap {
-        width: 350px;
+        width: 359px;
     }
 }
 
@@ -71,6 +71,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 75px;
+
 }
 
 /* header-logo */
@@ -93,6 +94,22 @@ body {
     align-items: center;
     list-style: none;
     gap: 20px;
+
+    @media(max-width: $mobile-breakpoint) {
+        gap: 0;
+        padding-right: 10px;
+    }
+
+}
+
+@media(max-width: $mobile-breakpoint) {
+    .header-nav-item:nth-child(2) {
+        display: none;
+    }
+
+    .header-nav-item:nth-child(3) {
+        display: none;
+    }
 }
 
 
@@ -158,6 +175,13 @@ body {
         background-position: -45px 0;
         background-size: contain;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        background-image: none;
+        height: 363px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -174,6 +198,11 @@ body {
         font-size: 24px;
         line-height: 29px;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        font-size: 24px;
+        line-height: 20px;
+    }
 }
 
 .promo-title-bold {
@@ -184,6 +213,11 @@ body {
     @media(max-width: $tablet-breakpoint) {
         font-size: 44px;
         line-height: 53px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        font-size: 38px;
+        line-height: 46px;
     }
 }
 
@@ -202,6 +236,9 @@ body {
         padding: 20px 0;
     }
 
+    @media(max-width: $mobile-breakpoint) {
+        padding: 65px 0;
+    }
 
 }
 
@@ -214,6 +251,11 @@ body {
 
     @media(max-width: $tablet-breakpoint) {
         gap: 20px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        gap: 32px;
+        justify-content: center;
     }
 }
 
@@ -228,6 +270,11 @@ body {
     @media(max-width: $tablet-breakpoint) {
         height: 167px;
         width: 232px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        height: 247px;
+        width: 343px;
     }
 }
 
@@ -250,6 +297,12 @@ body {
 
     @media(max-width: $tablet-breakpoint) {
         height: 116px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        height: 111px;
+        width: 343px;
+        background-size: cover;
     }
 }
 
@@ -276,6 +329,10 @@ body {
     @media(max-width: $tablet-breakpoint) {
         padding-top: 134px;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        padding-top: 0;
+    }
 }
 
 .product-title {
@@ -298,6 +355,10 @@ body {
     @media(max-width: $tablet-breakpoint) {
         padding-bottom: 72px;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        padding-bottom: 64px;
+    }
 }
 
 .product-list {
@@ -309,6 +370,10 @@ body {
 
     @media(max-width: $tablet-breakpoint) {
         gap: 16px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        justify-content: center;
     }
 
 }
@@ -451,6 +516,10 @@ body {
     @media(max-width: $tablet-breakpoint) {
         padding: 0 0 64px 0;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        padding: 0 0 81px 0;
+    }
 }
 
 .features-wrap {
@@ -504,6 +573,10 @@ body {
     @media(max-width: $tablet-breakpoint) {
         padding: 64px 0 219px 0;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        padding: 64px 0 109px 0;
+    }
 }
 
 .feedback-wrap {
@@ -540,6 +613,11 @@ body {
     @media(max-width: $tablet-breakpoint) {
         padding-top: 20px;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        line-height: 22px;
+        font-size: 18px;
+    }
 }
 
 .subscribe-name {
@@ -549,6 +627,10 @@ body {
 
     @media(max-width: $tablet-breakpoint) {
         line-height: 162%;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        line-height: 153.2%;
     }
 }
 
@@ -562,11 +644,16 @@ body {
         line-height: 162%;
         padding-bottom: 27px;
     }
+
+    @media(max-width: $mobile-breakpoint) {
+        line-height: 153.2%;
+        font-size: 14px;
+    }
 }
 
 .subscrime-form-field {
     margin-right: -3px;
-    padding: 16px;
+    padding: 13px;
     border-radius: 20px 0 0 20px;
     color: #222224;
     opacity: 0.67;
@@ -580,7 +667,7 @@ body {
 }
 
 .subscribe-button {
-    padding: 16px;
+    padding: 13px;
     border: none;
     background-color: #F16D7F;
     border-radius: 0 20px 20px 0;
@@ -605,6 +692,10 @@ body {
 .footer {
     background-color: #222224;
     padding: 30px 0;
+
+    @media(max-width: $mobile-breakpoint) {
+        padding: 30px 0 9px 0;
+    }
 }
 
 .footer-wrap {
@@ -614,6 +705,11 @@ body {
 
     @media(max-width: $tablet-breakpoint) {
         justify-content: space-between;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 }
 
@@ -630,6 +726,10 @@ body {
 
     @media(max-width: $tablet-breakpoint) {
         gap: 7.29px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        padding-bottom: 30px;
     }
 
 }
@@ -660,11 +760,21 @@ body {
     background: #F8F3F4;
     height: 148px;
     padding: 60px 0;
+
+    @media(max-width: $mobile-breakpoint) {
+        padding: 24px 0 60px 0;
+    }
 }
 
 .inner-wrap {
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: $mobile-breakpoint) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .inner-title {
@@ -739,7 +849,6 @@ body {
     @media(max-width: $tablet-breakpoint) {
         padding: 24px 0 40px 0;
         gap: 16px;
-
     }
 
     &-filter {
@@ -753,6 +862,11 @@ body {
         font-size: 14px;
         line-height: 17px;
         z-index: 20;
+
+        @media(max-width: $mobile-breakpoint) {
+            width: 50px;
+        }
+
     }
 
     &-filter[open] {
@@ -784,6 +898,11 @@ body {
     }
 }
 
+@media(max-width: $mobile-breakpoint) {
+    .filter-summary-span {
+        display: none;
+    }
+}
 
 .filter {
 
@@ -870,6 +989,10 @@ body {
         @media(max-width: $tablet-breakpoint) {
             width: 105px;
         }
+
+        @media(max-width: $mobile-breakpoint) {
+            width: 80px;
+        }
     }
 
     &-sort[open]>summary {
@@ -899,6 +1022,10 @@ body {
 
         @media(max-width: $tablet-breakpoint) {
             width: 105px;
+        }
+
+        @media(max-width: $mobile-breakpoint) {
+            width: 80px;
         }
     }
 
@@ -992,7 +1119,7 @@ body {
     &-btn {
         height: 47px;
         width: 47px;
-        background-color: #EAEAEA;
+        background-color: #D8D8D8;
         border: none;
     }
 
@@ -1003,8 +1130,14 @@ body {
     &-box {
         display: flex;
         justify-content: center;
+
+        @media(max-width: $mobile-breakpoint) {
+            width: 300px;
+            height: 365px;
+        }
     }
 }
+
 
 // About
 
@@ -1014,10 +1147,21 @@ body {
     margin-top: -66px;
     text-align: center;
 
+    @media(max-width: $mobile-breakpoint) {
+        margin-top: 0;
+    }
+
     &-wrap {
         border: 1px solid #EAEAEA;
         padding: 65px 0;
         background: #fff;
+
+        @media(max-width: $mobile-breakpoint) {
+            border-bottom: 1px solid #EAEAEA;
+            border-top: 1px solid #EAEAEA;
+            border-left: none;
+            border-right: none;
+        }
     }
 
     &-text-box {
@@ -1055,6 +1199,12 @@ body {
         line-height: 17px;
         color: #5E5E5E;
         padding-bottom: 33px;
+
+        @media(max-width: $mobile-breakpoint) {
+            line-height: 143.1%;
+            width: 326px;
+        }
+
     }
 
     &-price {
@@ -1071,6 +1221,10 @@ body {
         width: 642px;
         display: inline-block;
         margin: 65px 0;
+
+        @media(max-width: $mobile-breakpoint) {
+            width: 100px;
+        }
     }
 
 
@@ -1084,6 +1238,10 @@ body {
         @media(max-width:$tablet-breakpoint) {
             margin-left: 27%;
             gap: 5px;
+        }
+
+        @media(max-width: $mobile-breakpoint) {
+            margin-left: 15%;
         }
     }
 
