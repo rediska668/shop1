@@ -1,0 +1,94 @@
+/* header */
+
+.header {
+    background-color: $grey;
+    color: #fff;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+
+}
+
+/* header-logo */
+
+.header-logo-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+    @media(max-width: $tablet-breakpoint) {
+        gap: 20px;
+    }
+}
+
+/* navigation */
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+
+    @media(max-width: $mobile-breakpoint) {
+        gap: 0;
+        padding-right: 10px;
+    }
+
+}
+
+@media(max-width: $mobile-breakpoint) {
+    .header-nav-item:nth-child(2) {
+        display: none;
+    }
+
+    .header-nav-item:nth-child(3) {
+        display: none;
+    }
+}
+
+
+/* SVG */
+
+
+.header-icon svg {
+    fill: #fff;
+}
+
+.header-icon:hover svg {
+    fill: $main-color;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.header-icon-span:hover svg {
+    fill: $main-color;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.header-icon-span {
+    position: relative;
+    fill: #fff;
+}
+
+.cart-number {
+    position: absolute;
+    left: 23px;
+    bottom: 20px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: $main-color;
+}
+
+.header-icon-span span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

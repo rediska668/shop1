@@ -1,60 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.wrap {
-  margin: 0 auto;
-  width: 1140px;
-}
-
-@media (max-width: 1180px) {
-  .wrap {
-    width: 736px;
-  }
-}
-
-@media (max-width: 780px) {
-  .wrap {
-    width: 359px;
-  }
-}
-
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.hidden {
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  left: -99999px;
-  margin: -1px;
-}
-
+/* header */
 /* header */
 .header {
   background-color: #222;
@@ -1013,6 +957,63 @@ body {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+@media (max-width: 1180px) {
+  .wrap {
+    width: 736px;
+  }
+}
+
+@media (max-width: 780px) {
+  .wrap {
+    width: 359px;
+  }
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: -99999px;
+  margin: -1px;
+}
+
 .product-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1429,6 +1430,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 33%;
+  margin-bottom: 48px;
 }
 
 @media (max-width: 1180px) {
@@ -1447,11 +1449,7 @@ body {
 .about-shop-button {
   text-align: center;
   width: 212px;
-  margin-top: 48px;
   padding: 10px;
-  border: 1px solid #f16d7f;
-  background-color: #fff;
-  color: #f16d7f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1461,7 +1459,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid #f16d7f;
+  background-color: #fff;
+  color: #f16d7f;
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
