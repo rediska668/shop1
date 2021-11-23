@@ -1,0 +1,120 @@
+.feedback {
+    background-color: #fff;
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+    padding: 100px 0;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 64px 0 219px 0;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        padding: 64px 0 109px 0;
+    }
+}
+
+.feedback-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    @media(max-width: $tablet-breakpoint) {
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media(max-width: $tablet-breakpoint) {
+    .subscribe-info {
+        width: 360px;
+    }
+
+    .subscribe {
+        width: 557px;
+        padding-top: 48px;
+    }
+}
+
+
+.subscribe-blockquote {
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+    padding-top: 30px;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding-top: 20px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        line-height: 22px;
+        font-size: 18px;
+    }
+}
+
+.subscribe-name {
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+
+    @media(max-width: $tablet-breakpoint) {
+        line-height: 162%;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        line-height: 153.2%;
+    }
+}
+
+.subscribe-text {
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+    padding-bottom: 32px;
+
+    @media(max-width: $tablet-breakpoint) {
+        line-height: 162%;
+        padding-bottom: 27px;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        line-height: 153.2%;
+        font-size: 14px;
+    }
+}
+
+.subscrime-form-field {
+    margin-right: -3px;
+    padding: 13px;
+    border-radius: 20px 0 0 20px;
+    color: #222224;
+    opacity: 0.67;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 20px;
+    }
+}
+
+.subscribe-button {
+    padding: 13px;
+    border: none;
+    background-color: #F16D7F;
+    border-radius: 0 20px 20px 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+    @media(max-width: $tablet-breakpoint) {
+        padding: 20px;
+    }
+}
+
+.subscribe-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
